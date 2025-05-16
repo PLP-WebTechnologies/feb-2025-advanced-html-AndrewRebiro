@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Form & Multimedia Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+    .form-section {
+      margin-top: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Our HTML5 Example</h1>
+
+  <!-- Ordered List with Roman Numerals -->
+  <h2>Ordered List (Roman Numerals)</h2>
+  <ol type="I">
+    <li>Introduction to HTML</li>
+    <li>Working with CSS</li>
+    <li>Mastering JavaScript</li>
+    <li>Exploring HTML5</li>
+    <li>Building Web Forms</li>
+  </ol>
+
+  <!-- External Image from Pexels -->
+  <h2>Beautiful Nature Image</h2>
+  <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" alt="Nature from Pexels">
+
+  <!-- Table of Contacts -->
+  <h2>Contact List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alice Johnson</td>
+        <td>123 Oak Street</td>
+        <td>+1234567890</td>
+        <td>alice@example.com</td>
+      </tr>
+      <tr>
+        <td>Bob Smith</td>
+        <td>456 Maple Ave</td>
+        <td>+1987654321</td>
+        <td>bob@example.com</td>
+      </tr>
+      <tr>
+        <td>Charlie Lee</td>
+        <td>789 Pine Road</td>
+        <td>+1122334455</td>
+        <td>charlie@example.com</td>
+      </tr>
+      <tr>
+        <td>Diana Prince</td>
+        <td>321 Birch Lane</td>
+        <td>+1222333444</td>
+        <td>diana@example.com</td>
+      </tr>
+      <tr>
+        <td>Eric Adams</td>
+        <td>654 Cedar Blvd</td>
+        <td>+1333444555</td>
+        <td>eric@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Registration Form -->
+  <div class="form-section">
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+
+      <div class="form-group">
+        <label>Gender *</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male" style="display: inline;">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female" style="display: inline;">Female</label>
+      </div>
+
+      <div class="form-group">
+        <label for="country">Country *</label>
+        <select id="country" name="country" required>
+          <option value="">-- Select Country --</option>
+          <option value="Kenya">Kenya</option>
+          <option value="USA">USA</option>
+          <option value="India">India</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Hobbies</label>
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading" style="display: inline;">Reading</label>
+        <input type="checkbox" id="sports" name="hobbies" value="Sports">
+        <label for="sports" style="display: inline;">Sports</label>
+        <input type="checkbox" id="music" name="hobbies" value="Music">
+        <label for="music" style="display: inline;">Music</label>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
